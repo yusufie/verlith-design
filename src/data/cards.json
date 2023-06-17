@@ -1,0 +1,37 @@
+{
+    "cards": [
+      {
+        "id": 1,
+        "url": "",
+        "image": "/images/bronze.png",
+        "point": "/icons/point-orange.svg",
+        "alt": "bronze",
+        "name": "BRONZE",
+        "type": "bronze",
+        "text": "Be a conversationalist and talk about daily topics, build your reputation from scratch. ",
+        "price": 49
+      },
+      {
+        "id": 2,
+        "url": "",
+        "image": "/images/silver.png",
+        "point": "/icons/point-green.svg",
+        "alt": "silver",
+        "name": "SILVER",
+        "type": "silver",
+        "text": "Be a storyteller and share your experiences to monetize them without any limitations.",
+        "price": 99
+      },
+      {
+        "id": 3,
+        "url": "",
+        "image": "/images/gold.png",
+        "point": "/icons/point-yellow.svg",
+        "alt": "gold",
+        "name": "GOLD",
+        "type": "gold",
+        "text": "Be a pioneer and participate in Deserve to Earn (DtE) concept with endless opportunities.",
+        "price": 199
+      }
+    ]
+  }

@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('/fonts/SpaceGrotesk/static/SpaceGrotesk-Light.ttf') format('truetype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('/fonts/SpaceGrotesk/static/SpaceGrotesk-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('/fonts/SpaceGrotesk/static/SpaceGrotesk-Medium.ttf') format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('/fonts/SpaceGrotesk/static/SpaceGrotesk-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('/fonts/SpaceGrotesk/static/SpaceGrotesk-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+
+body {
+  /* font-family: "Test Söhne"; */
+  background: #17191E;
+  background-image: url("/images/hero.png");
+  background-repeat: no-repeat;
+  background-size: 100% 19.8%;
+  background-position: top right;
+  background-blend-mode: lighten;
+}
+
+.mainContainer {
+  /* background: #17191E; */
+
+  
+}
+
+
+
+
+/* media queries start */
+
+@media screen and (max-width: 768px) {
+  
+  /*   body {
+    background-size: 100% 15%;
+  }
+  */
+
+
+}
+
+@media screen and (max-width: 425px) {
+  
+  body {
+    background-size: 100% 12.5%;
+  }
+
+
+}
+
+/* media queries end */
