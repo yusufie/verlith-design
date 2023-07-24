@@ -1,4 +1,16 @@
-#heroTitle {
+.heroTitleContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  margin: 6rem 0 6rem 0;
+}
+
+.heroTitleContainer h1 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+
   background: linear-gradient(90deg, #f39f72 0%, #f8858d 46.35%, #ff69ac 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -8,7 +20,39 @@
   top: calc(50% - 23px / 2 - 868.5px);
 }
 
-#socialContainer {
+.frame {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 4rem;
+  margin-bottom: 10rem;
+  z-index: 100;
+}
+
+.frame .from {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+}
+
+.frame h1 {
+  color: #FFF;
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 1rem;
+}
+
+.frame .to {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+}
+
+.socialContainer {
+  width: 20rem;
   box-sizing: border-box;
   background: rgba(20, 20, 20, 0.4);
   border: 1px solid #0f1011;
@@ -18,11 +62,30 @@
   z-index: 4;
 }
 
-#socialContainer .social {
+.socialContainer ul {
+  list-style-type: none;
+}
+
+.socialContainer ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 1rem 0 1rem;
+}
+
+.socialContainer li img {
+  margin-inline-end: 1rem;
+  margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.socialContainer .social {
   display: flex;
   text-align: left;
   align-items: center;
   height: 30px;
+  width: 16rem;
+  color: rgb(156 163 175);
   background: rgba(15, 16, 17, 0.4);
   box-shadow: 0px 0px 16px rgba(47, 47, 47, 0.05);
   backdrop-filter: blur(1px);
@@ -31,11 +94,19 @@
   gap: 8px;
 }
 
-#socialButton {
+.social span {
+  padding-inline-start: 1rem/* 16px */;
+  font-weight: 300;
+}
+
+.socialButton {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: left;
+  width: 16rem;
   height: 30px;
+  color: rgb(209 213 219);
   background: linear-gradient(
     101.48deg,
     #5fabc5 0%,
@@ -49,7 +120,7 @@
   gap: 8px;
 }
 
-#socialButton:hover {
+.socialButton:hover {
   cursor: pointer;
   box-shadow: 0px 0px 8px 4px #6666d6;
   transition: all 0.5s ease-in-out;
@@ -145,12 +216,63 @@
 
 @media screen and (max-width: 768px) {
 
-  #socialContainer .social {
-    padding: 4.5px 8px;
-    gap: 4px;
+  .heroTitleContainer {
+    margin: 3rem 0 3rem 0;
   }
 
-  #socialButton {
+  .heroTitleContainer h1 {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .frame {
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    gap: 2rem;
+  }
+
+  .frame .from {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .frame h1 {
+    font-size: 2rem;
+  }
+
+  .frame .to {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .socialContainer {
+    width: 16rem;
+  }
+
+  .socialContainer ul li {
+    margin: 0 0.5rem 0 0.5rem;
+  }
+
+  .socialContainer li img {
+    margin-inline-end: 0.5rem;
+    margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+  }
+
+  .socialContainer .social {
+    padding: 4.5px 8px;
+    gap: 4px;
+    width: 14rem;
+  }
+
+  .social span {
+    padding-inline-start: 0.5rem/* 8px */;
+    font-size: 0.875rem/* 14px */;
+    line-height: 1.25rem/* 20px */;
+  }
+
+  .socialButton {
+    width: 14rem;
     padding: 4.5px 8px;
     gap: 4px;
   }
@@ -158,6 +280,58 @@
 }
 
 @media screen and (max-width: 425px) {
+
+  .heroTitleContainer {
+    margin: 2rem 0 2rem 0;
+  }
+
+  .heroTitleContainer h1 {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .frame {
+    margin-top: 2rem;
+    margin-bottom: 3.5rem;
+    gap: 1rem;
+  }
+
+  .frame .from {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .frame h1 {
+    font-size: 1.5rem;
+  }
+
+  .socialContainer {
+    width: 14rem;
+  }
+
+  .socialContainer ul li {
+    margin: 0 0.25rem 0 0.25rem;
+  }
+
+  .socialContainer li img {
+    margin-inline-end: 0.25rem;
+    margin-top: 0.25rem;
+      margin-bottom: 0.25rem;
+  }
+
+  .socialContainer .social {
+    width: 12rem;
+  }
+
+  .social span {
+    padding-inline-start: 0.25rem/* 4px */;
+    font-size: 0.75rem/* 12px */;
+    line-height: 1rem/* 16px */;
+  }
+
+  .socialButton {
+    width: 12rem;
+  }
 
   .radialGradientEffect {
   top: 0rem;

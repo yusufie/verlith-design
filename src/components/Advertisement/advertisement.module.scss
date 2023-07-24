@@ -1,0 +1,246 @@
+.advertisementContainer {
+    background: #17191E;
+    background-image: url("/images/footer-verlith.png");
+    background-repeat: no-repeat;
+    background-size: 100% 91%;
+    background-position: bottom;
+    background-blend-mode: lighten;
+    border-top-left-radius: 33% 33%;
+    border-top-right-radius: 33% 33% ;
+    margin-top: 12rem/* 192px */;
+    z-index: -2;
+}
+
+.advertisementTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 1.5rem/* 24px */;
+}
+
+.advertisementTitle h1 {
+  font-size: 3rem/* 48px */;
+  line-height: 1;
+  font-weight: 500;
+  color: rgb(255 255 255);
+  padding-bottom: 3rem/* 48px */;
+  // font-family: Space Grotesk;
+}
+
+.footerGlassContainer {
+  display: flex;
+  justify-content: flex-start;
+  text-align: start;
+  margin-left: 10rem/* 160px */;
+  margin-right: 10rem/* 160px */;
+
+  background: rgba(20, 20, 20, 0.4);
+  border: 1px solid #FFA5E6;
+  box-shadow: 0px 0px 16px rgba(23, 23, 23, 0.05);
+  backdrop-filter: blur(16px);
+  border-radius: 8px;
+}
+
+.footerGlass {
+  padding-left: 2rem/* 32px */;
+    padding-right: 2rem/* 32px */;
+    padding-top: 2rem/* 32px */;
+    padding-bottom: 1rem/* 16px */;
+    // font-family: Space Grotesk; 
+    font-weight: 400;
+}
+
+.footerGlass p {
+  font-size: 2.25rem/* 36px */;
+  line-height: 2.5rem/* 40px */;
+  color: rgb(243 244 246);
+  margin-top: 0.5rem/* 8px */;
+}
+
+.presentationButton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem/* 16px */;
+  margin-top: 2.5rem/* 40px */;
+  margin-bottom: 1rem/* 16px */;
+}
+
+.presentationButton span {
+  font-size: 1.25rem/* 20px */;
+    line-height: 1.75rem/* 28px */;
+    color: rgb(209 213 219);
+
+}
+
+#verlithTitle {
+    color: #17191E;
+    text-shadow: 0px 4px 4px rgba(23, 25, 30, 0.25);
+}
+
+
+/* radialgradient starts */
+
+.gradient {
+    /* height: 100vh; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    transform: rotate(180deg);
+  }
+  
+  .gradientEffect {
+    position: absolute;
+    top: 2rem;
+    background-color: rgba(255, 255, 255, 0.041);
+    width: 110rem;
+    height: 558px;
+    z-index: 4;
+    backdrop-filter: blur(2px);
+    border-radius: 50%;
+    overflow: hidden;
+    transform: rotate(0deg);
+  }
+  
+  .gradientEffect::after {
+    content: "";
+    position: absolute;
+    top:2rem;
+    height: 560px;
+    background-color: #17191E;
+    inset: -5px;
+    border-radius: 50%;
+    z-index: -1;
+  }
+  
+  .gradientEffectLight {
+    position: absolute;
+    width: 60%;
+    height: 368px;
+    top:17rem;
+    background: radial-gradient(50% 50% at 50% 50%, #A68FFF 0%, rgba(130, 105, 255, 0) 100%);
+    opacity: 0.3;
+    transform: rotate(180deg);
+    filter: blur(50px);
+  }
+  
+  .gradientEffectLight::after {
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: 500px;
+    top: 17rem;
+    background: radial-gradient(50% 50% at 50% 50%, #3AA0EB 0%, rgba(150, 129, 255, 0) 100%);
+    opacity: 0.2;
+    filter: blur(50px);
+  }
+  
+  /* radialgradient ends */
+
+
+
+/* media query starts */
+
+@media screen and (max-width: 768px) {
+  
+  .advertisementContainer {
+    padding-top: 12rem/* 192px */;
+    margin-top: 1rem/* 16px */;
+}
+
+.advertisementTitle {
+  padding-bottom: 0.75rem/* 12px */;
+}
+
+.advertisementTitle h1 {
+  font-size: 1.5rem/* 24px */;
+        line-height: 2rem/* 32px */;
+        padding-bottom: 1.5rem/* 24px */;
+}
+
+.footerGlassContainer {
+  margin-left: 5rem/* 80px */;
+        margin-right: 5rem/* 80px */;
+}
+
+.footerGlass {
+  padding: 1rem/* 16px */;
+}
+
+.footerGlass p {
+  font-size: 1.125rem/* 18px */;
+  line-height: 1.75rem/* 28px */;
+  margin-top: 0px;
+}
+
+.presentationButton {
+  margin-top: 0.5rem/* 8px */;
+  margin-bottom: 0.5rem/* 8px */;
+}
+
+.presentationButton span {
+  font-size: 0.875rem/* 14px */;
+  line-height: 1.25rem/* 20px */;
+}
+
+}
+
+  @media screen and (max-width: 425px) {
+
+    .advertisementContainer {
+      /* background-size: 100% 100%; */
+      background-position: bottom;
+  }
+
+  .advertisementTitle h1 {
+    font-size: 1.25rem/* 20px */;
+    line-height: 1.75rem/* 28px */;
+  }
+
+  .footerGlassContainer {
+    margin-left: 2.5rem/* 40px */;
+    margin-right: 2.5rem/* 40px */;
+  }
+
+  .footerGlass {
+    padding: 0.5rem/* 8px */;
+  }
+
+  .footerGlass p {
+    font-size: 1rem/* 16px */;
+    line-height: 1.5rem/* 24px */;
+  }
+
+  .presentationButton {
+    margin-top: 0.25rem/* 4px */;
+    margin-bottom: 0.25rem/* 4px */;
+  }
+
+  .presentationButton span {
+    font-size: 0.75rem/* 12px */;
+    line-height: 1rem/* 16px */;
+  }
+
+    .gradientEffect {
+    top: 15rem;
+    width: 30rem;
+    height: 240px;
+    }
+  
+    .gradientEffect::after {
+      height: 242px;
+    }
+  
+  .gradientEffectLight {
+    top: 20rem;
+    width: 80%;
+    height: 240px;
+    }
+  
+  }
+
+  /* media query ends */

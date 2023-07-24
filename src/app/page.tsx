@@ -1,9 +1,9 @@
 // import Image from 'next/image'
-import Navbar from "@/components/Navbar";
-import Hero from "@/components/Hero";
-import Social from "@/components/Social";
-import Cards from "@/components/Cards";
-import Advertisement from "@/components/Advertisement";
+import Navbar from "@/components/Navbar/Navbar";
+import Hero from "@/components/Hero/Hero";
+import Social from "@/components/Social/Social";
+import Cards from "@/components/Cards/Cards";
+import Advertisement from "@/components/Advertisement/Advertisement";
 
 export default function Home() {
   return (

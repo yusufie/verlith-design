@@ -1,0 +1,270 @@
+.heroContainer {
+  display: flex;
+  flex-direction: row;
+  margin-inline-start: 9rem;
+  margin-inline-end: 15rem;
+  height: 200px;
+  margin-top: 6rem;
+}
+
+.heroGlassContainer {
+  display: flex;
+  justify-content: flex-start;
+  text-align: start;
+  height: 16rem;
+  margin-inline-start: 9rem;
+  margin-inline-end: 18rem;
+
+  background: rgba(20, 20, 20, 0.4);
+  border: 1px solid #0F1011;
+  box-shadow: 0px 0px 16px rgba(23, 23, 23, 0.05);
+  backdrop-filter: blur(16px);
+  border-radius: 8px;
+}
+
+.heroGlass {
+  padding: 2rem;
+  font-weight: 500;
+}
+
+.glass {
+  height: 7rem;
+}
+
+.glass p {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  color: rgb(255, 255, 255);
+  margin-bottom: 0.5rem;
+}
+
+.whitepaperButton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0 1rem 0;
+}
+
+.whitepaperButton span {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: rgb(209, 2013, 219);
+}
+
+/* text animation starts */
+
+.content {
+  top: 6rem;
+  overflow: hidden;
+  font-family: 'Lato', sans-serif;
+  font-size: 5.5rem;
+  line-height: 100%;
+  color: #ecf0f1;
+}
+
+.contentContainer {
+  font-weight: 600;
+  overflow: hidden;
+  height: 6rem;
+  width: 700px;
+}
+
+.contentContainerText {
+  display: inline;
+  float: left;
+  font-size: 90px;
+}
+
+.contentContainerList {
+  padding-left: 300px;
+  text-align: left;
+  list-style: none;
+  -webkit-animation-name: change;
+  -webkit-animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: change;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.contentContainerListitem {
+  font-size: 3rem;
+}
+
+@keyframes opacity {
+
+  0%,
+  100% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes change {
+
+  0%,
+  11.1%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  14.1%,
+  38.88% {
+    transform: translate3d(0, -33.33%, 0);
+  }
+
+  42.21%,
+  66.66% {
+    transform: translate3d(0, -66.66%, 0);
+  }
+
+  69.99%,
+  94.77% {
+    transform: translate3d(0, -33.33%, 0);
+  }
+}
+
+
+/* text animation ends */
+
+@media screen and (max-width: 1024px) {
+  .heroGlassContainer {
+    margin-right: 9rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .heroContainer {
+    height: 100px;
+    margin-top: 1rem;
+    margin-inline-start: 4rem;
+  }
+
+  .heroGlassContainer {
+    height: 12rem;
+    margin-right: 9rem;
+    margin-inline-start: 4rem;
+    margin-inline-end: 9rem;
+  }
+
+  .heroGlass {
+    padding: 1rem;
+  }
+
+  .glass {
+    height: 6rem;
+  }
+
+  .glass p {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .whitepaperButton {
+    padding: 0.5rem 0 0.5rem 0;
+  }
+
+  .whitepaperButton span {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .content {
+    top: 3rem;
+    overflow: hidden;
+    font-family: 'Lato', sans-serif;
+    font-size: 2.57rem;
+    line-height: 100%;
+  }
+
+  .contentContainer {
+    overflow: hidden;
+    height: 3rem;
+    width: 700px;
+  }
+
+  .contentContainerText {
+    display: inline;
+    float: left;
+    font-size: 45px;
+  }
+
+  .contentContainerList {
+    padding-left: 9rem;
+  }
+
+  .contentContainerListitem {
+    font-size: 1.5rem;
+  }
+
+}
+
+@media screen and (max-width: 425px) {
+  .heroContainer {
+    height: 75px;
+    width: 50%;
+    margin-top: 0;
+    margin-inline-start: 2.5rem;
+  }
+
+  .heroGlassContainer {
+    height: 9rem;
+    margin-right: 5rem;
+    margin-inline-start: 2.5rem;
+  }
+
+  .heroGlass {
+    padding: 0.5rem;
+  }
+
+  .glass {
+    height: 5rem;
+  }
+
+  .glass p {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .whitepaperButton {
+    padding: 0.25rem 0 0.25rem 0;
+  }
+
+  .whitepaperButton span {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  .content {
+    top: 2rem;
+    overflow: hidden;
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+    line-height: 100%;
+  }
+
+  .contentContainer {
+    overflow: hidden;
+    height: 2rem;
+    width: 400px;
+  }
+
+  .contentContainerText {
+    display: inline;
+    float: left;
+    font-size: 2rem;
+  }
+
+  .contentContainerList {
+    padding-left: 6rem;
+  }
+
+  .contentContainerListitem {
+    font-size: 1rem;
+  }
+
+}

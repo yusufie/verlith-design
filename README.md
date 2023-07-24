@@ -6,7 +6,8 @@ https://www.figma.com/file/b9dB7uivIXFOauBT7LdEtR/Verlith-Design?type=design&t=R
 
 
 # Verlith-Design
-A project that showcases the implementation of Glassmorphism UI using Next.js, React, Typescript and Tailwind CSS.
+
+The Verlith-Design project aims to streamline the process of turning a Figma design into functional code for desktop devices. A project that showcases the implementation of Glassmorphism UI using Next.js, React, Typescript and Tailwind CSS.
 
 ![Verlith-Design](./public/images/readme.png)
 

@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #17191E;
+  background-image: url("/images/hero.png");
+  background-repeat: no-repeat;
+  background-size: 100% 19.7%;
+  background-position: top right;
+  background-blend-mode: lighten;
+}
+
+
+/* media queries start */
+
+@media screen and (max-width: 768px) {
+  
+  /*   body {
+    background-size: 100% 15%;
+  }
+  */
+
+
+}
+
+@media screen and (max-width: 425px) {
+  
+  body {
+    background-size: 100% 12.5%;
+  }
+
+
+}
+
+/* media queries end */
